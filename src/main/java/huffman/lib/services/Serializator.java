@@ -1,6 +1,6 @@
-package app.huffman.services;
+package huffman.lib.services;
 
-import app.huffman.models.CompressionResult;
+import huffman.lib.models.CompressionResult;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

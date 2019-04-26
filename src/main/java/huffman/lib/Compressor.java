@@ -1,7 +1,7 @@
-package app.huffman;
+package huffman.lib;
 
-import app.huffman.models.CompressionResult;
-import app.huffman.models.Node;
+import huffman.lib.models.CompressionResult;
+import huffman.lib.models.Node;
 
 import java.util.BitSet;
 import java.util.HashMap;

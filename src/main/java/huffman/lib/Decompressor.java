@@ -1,8 +1,8 @@
-package app.huffman;
+package huffman.lib;
 
-import app.huffman.models.CompressionResult;
-import app.huffman.models.Node;
-import app.huffman.services.Util;
+import huffman.lib.models.CompressionResult;
+import huffman.lib.models.Node;
+import huffman.lib.services.Util;
 
 import java.util.ArrayList;
 import java.util.List;
