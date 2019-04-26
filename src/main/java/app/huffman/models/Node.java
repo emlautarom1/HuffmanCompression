@@ -1,7 +1,9 @@
 package app.huffman.models;
 
+import java.io.Serializable;
+
 // Huffman trie node
-public class Node implements Comparable<Node> {
+public class Node implements Comparable<Node>, Serializable {
     private final byte byteData;
     private final int frecuency;
     private final Node left, right;

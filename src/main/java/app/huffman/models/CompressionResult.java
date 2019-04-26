@@ -1,8 +1,9 @@
 package app.huffman.models;
 
+import java.io.Serializable;
 import java.util.BitSet;
 
-public class CompressionResult {
+public class CompressionResult implements Serializable {
     private final int validBitCount;
     private final BitSet compressedData;
     private final Node trieRoot;
