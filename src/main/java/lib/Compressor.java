@@ -1,7 +1,7 @@
-package huffman.lib;
+package lib;
 
-import huffman.lib.models.CompressionResult;
-import huffman.lib.models.Node;
+import lib.models.CompressionResult;
+import lib.models.Node;
 
 import java.util.BitSet;
 import java.util.HashMap;
@@ -12,6 +12,10 @@ public class Compressor {
     private static final int BYTE_VARIATIONS = 256;
 
     public static CompressionResult compress(byte[] input) {
+        if (input == null || input.length == 0) {
+            throw new IllegalArgumentException("input cannot be empty nor null");
+        }
+
         // Build a frequency Map for each byte
         HashMap<Byte, Integer> frequencies = buildFrequencyMap(input);
 

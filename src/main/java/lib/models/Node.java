@@ -1,4 +1,4 @@
-package huffman.lib.models;
+package lib.models;
 
 import java.io.Serializable;
 

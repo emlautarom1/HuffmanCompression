@@ -1,4 +1,4 @@
-package huffman.lib.models;
+package lib.models;
 
 import java.io.Serializable;
 import java.util.BitSet;
@@ -24,5 +24,9 @@ public class CompressionResult implements Serializable {
 
     public Node getTrieRoot() {
         return trieRoot;
+    }
+
+    public int getByteCount() {
+        return (int) Math.ceil(this.validBitCount / 8);
     }
 }

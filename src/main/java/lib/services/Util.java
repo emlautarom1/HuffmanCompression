@@ -1,4 +1,4 @@
-package huffman.lib.services;
+package lib.services;
 
 import java.util.List;
 

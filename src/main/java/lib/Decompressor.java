@@ -1,8 +1,8 @@
-package huffman.lib;
+package lib;
 
-import huffman.lib.models.CompressionResult;
-import huffman.lib.models.Node;
-import huffman.lib.services.Util;
+import lib.models.CompressionResult;
+import lib.models.Node;
+import lib.services.Util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,10 @@ import java.util.List;
 public class Decompressor {
 
     public static byte[] decompress(CompressionResult compressedData) {
+        if (compressedData == null) {
+            throw new IllegalArgumentException("compressed data cannot be null");
+        }
+
         List<Byte> outputBytes = new ArrayList<>();
         int readIndex = 0;
         while (readIndex < compressedData.getValidBitCount()) {
