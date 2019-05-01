@@ -1,6 +1,7 @@
 package lib.models;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 // Huffman trie node
 public class Node implements Comparable<Node>, Serializable {
@@ -40,4 +41,19 @@ public class Node implements Comparable<Node>, Serializable {
         return this.frecuency - o.frecuency;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Node node = (Node) o;
+        return byteData == node.byteData &&
+                frecuency == node.frecuency &&
+                Objects.equals(left, node.left) &&
+                Objects.equals(right, node.right);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(byteData, frecuency, left, right);
+    }
 }
