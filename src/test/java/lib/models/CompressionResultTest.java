@@ -17,7 +17,7 @@ public class CompressionResultTest {
             CompressionResult restoredCompression = CompressionResult.fromByteArray(toByteArray);
             assertEquals(originalCompression, restoredCompression);
         } catch (Exception e) {
-            fail("Exception caugth: " + e.getMessage());
+            fail("Exception caught: " + e.getMessage());
         }
     }
 
