@@ -1,6 +1,7 @@
 package lib.models;
 
-import lib.Compressor;
+import huffman.lib.Compressor;
+import huffman.lib.models.CompressionResult;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

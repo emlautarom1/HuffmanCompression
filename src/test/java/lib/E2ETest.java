@@ -1,6 +1,8 @@
 package lib;
 
-import lib.models.CompressionResult;
+import huffman.lib.Compressor;
+import huffman.lib.Decompressor;
+import huffman.lib.models.CompressionResult;
 import org.junit.Before;
 import org.junit.Test;
 

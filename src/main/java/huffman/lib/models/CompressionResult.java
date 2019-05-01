@@ -1,4 +1,4 @@
-package lib.models;
+package huffman.lib.models;
 
 import java.io.*;
 import java.util.BitSet;

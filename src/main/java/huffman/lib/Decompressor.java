@@ -1,8 +1,8 @@
-package lib;
+package huffman.lib;
 
-import lib.models.CompressionResult;
-import lib.models.Node;
-import lib.services.Util;
+import huffman.lib.models.CompressionResult;
+import huffman.lib.models.Node;
+import huffman.lib.services.Utilities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,6 @@ public class Decompressor {
             }
             outputBytes.add(current.getByteData());
         }
-
-        return Util.toByteArray(outputBytes);
+        return Utilities.toByteArray(outputBytes);
     }
 }
